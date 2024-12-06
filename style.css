@@ -1,0 +1,240 @@
+* {
+    font-family: "Bungee Spice", sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+.container{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: beige;
+}
+.navbar{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+}
+#logo{
+    width: 10%;
+}
+.linkItem{
+    display: inline-block;
+    margin: 10px 10px;
+}
+.link{
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+.link:hover{
+    /* background-color: black; */
+    color: rgb(128, 69, 69);
+}
+#lastname{
+    display: inline-block;
+    color: black;
+}
+.title{
+    margin-top: 13%;
+    margin-left: 10%;
+}
+.title_h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.download{
+
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 25px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.images{
+    
+    width: 45%;
+    height: 95%;
+    position: absolute;
+    margin-top: 0%;
+    right: 30px;
+    /* bottom: -50px; */
+    /* top: 0px; */
+}
+.imageGroup{
+    height:350%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+}
+.images:hover #girl{
+    left: 40%;
+
+}
+.images:hover #shape{
+    bottom: 40px;
+}
+#about{
+    margin: 20% 8% 0% 8%;
+   
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 32px;
+}
+.heading span{
+    color: green;
+    font-size: 20px;
+}
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin-top: 3rem;
+}
+.about_img img{
+    width: 80%;
+    border-radius: 10px;
+
+}
+.about_para p{
+    text-align: justify;
+    font-size: 20px;
+
+}
+.information{
+    margin-top: 25px;
+}
+.info_box span{
+    margin-left: 1.5rem;
+
+}
+.info_box{
+    margin-bottom: 20px;
+}
+
+#skills{
+
+    margin: 5% 5% 0% 8%;
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin-top: 3rem;
+}
+.progress_container{
+    margin-top: 10px;
+}
+.progress_bar{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    padding: 1rem 0px;
+    position: relative;
+}
+.bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0px;
+
+}
+.html_bar{
+   width: 95%;
+   background-color: orange;
+}
+.css_bar{
+    width: 90%;
+    background-color: orange;
+ }
+.js_bar{
+    width: 80%;
+    background-color: orange;
+ }
+.react_bar{
+    width: 70%;
+    background-color: orange;
+ }
+ .skill_img img{
+    width: 80%;
+    border-radius: 10px;
+ }
+ #contact{
+    margin: 5% 5% 0% 8%;
+}
+.icon_set{
+    display:flex;
+    /* to align block items in a line */
+    align-items: center; 
+    /* to vertically center y axis*/
+    justify-content: center; 
+     /* to horizontally center x axis */
+    margin-top: 2rem;
+}
+.icon, .up_arrow{
+   
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+}
+.icon i{
+    font-size: 3rem;
+    color: black;
+}
+footer p{
+    
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+
+}
+.icon :hover{
+    background-image: linear-gradient(to bottom right, yellow, red,green);
+}
+.icon:hover i{
+
+    color: white;
+    animation: shake 0.75s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+    
+}
+
+.up_arrow{
+    
+    background-image: linear-gradient(to bottom right, yellow, red, green);
+    float: right;
+    margin: 20px 10px 5px 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
